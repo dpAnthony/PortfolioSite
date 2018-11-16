@@ -1,8 +1,53 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #333333;
 	color: #FFE18D;
 	font-family: "josefin-sans";
-	height: 8000px;
+	height: 3000px;
+}
+
+.btn {
+	height: 306px;
+	width: 306px;
+	border-radius: 5px;
+	background-color: #FFE18D;
+	float:left;
+}
+
+.btn:first-of-type {
+	margin-right: 30px;
+}
+.btn:last-of-type {
+	margin-left: 30px;
+}
+
+.spacer0 {
+	width:100%;
+	height:1px;
+	display: block;
+}
+.spacer1 {
+	width:100%;
+	height:30px;
+	display: block;
+}
+.spacer2 {
+	width:100%;
+	height:60px;
+	display: block;
+}
+.spacer3 {
+	width:100%;
+	height:90px;
+	display: block;
+}
+.spacer4 {
+	width:100%;
+	height:120px;
+	display: block;
 }
 
 #container {
@@ -12,6 +57,39 @@ body {
 	margin-right: auto;
 }
 
+#container13 {
+	width: 1062px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#greetings {
+	margin:auto;
+	width: 642px;
+}
+
+#greetings h1 {
+	text-align: center;
+	font-size: 44px;
+}
+
+#greetings p {
+	text-align: center;
+	font-size: 28px;
+}
+
 #moon {
+	position: fixed;
+}
+
+#nav {
+	width: 100%;
+	height: 60px;
+}
+
+#sidebar {
+	width: 54px;
+	height: 30px;
+	margin-top: 60px;
 	position: fixed;
 }

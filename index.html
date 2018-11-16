@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Title</title>
+		<title>David Anthony's Portfolio</title>
 		<link href="css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
 		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -19,18 +19,41 @@
 
 		<body>
 			
-		<div id="sidebar">
-			<div id="imagesequence">
-				<img id="moon" src="images/MoonPhases-01.png" height="30px" width="30px">
+			<div id="container13">
+				<div id="sidebar">
+					<div id="imagesequence">
+						<img id="moon" src="images/MoonPhases-01.png" height="30px" width="30px">
+					</div>
+				</div>
+				
+				<div id="container">
+			
+					<div id="nav"></div>
+					<div class="spacer2"></div>
+
+					<div id="greetings">
+						<h1>Hi, I'm David Paul Anthony.</h1>
+						<div class="spacer1"></div>
+						<p>I'm a multi-disciplinary designer from the US.</p>
+						<p>Scroll or click the buttons below to see my work.</p>
+
+					</div>
+
+					<div class="spacer2"></div>
+
+					<div id="bigNav">
+
+						<div class="btn"></div>
+						<div class="btn"></div>
+						<div class="btn"></div>
+
+					</div>
+
+				</div>
+				
 			</div>
-		</div>
 			
-		<div id="container">
-			
-			
-		</div>
-		
-		
+
 		<script>
 	
 			//define images
@@ -85,7 +108,7 @@
 			var controller = new ScrollMagic.Controller();
 
 			//buld scene
-			var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() }).setTween(tween).addIndicators().addTo(controller);
+			var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() }).setTween(tween).addTo(controller);
 		</script>
 			
 		</body>
