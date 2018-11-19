@@ -3,33 +3,87 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>David Anthony's Portfolio</title>
+		
 		<link href="css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		
 		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script src="js/jquery.easing.1.3.js" type="text/javascript" ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 		
-		<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-		<script src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+		<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
 		<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-		<!--<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>-->
 		
+		<!--
+		<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+		
+		-->
+
 
 	</head>
 
 		<body>
 			
-			<div id="container13">
+			<div id="nav">
+				
+				<div class="container13">
+				
+					<div class="container">
+					
+						<div class="spacer1"></div>
+
+						<li>
+							<ul>
+								<a href="#gds" class="navi">GD</a>
+							</ul>
+
+							<ul>
+								<a href="#id" class="navi">ID</a>
+							</ul>
+
+							<ul>
+								<a href="#md" class="navi">MD</a>
+							</ul>
+
+							<ul>
+								<a href="#about" class="navi">ABT</a>
+							</ul>
+
+							<ul>
+								<a href="#contact" class="navi">HEY</a>
+							</ul>
+
+						</li>
+
+						<h1 id="navHdr">David Paul Anthony</h1>
+
+					</div>
+
+					<div class="clear"></div>
+
+					<div class="container">
+
+						<div class="line1"></div>
+
+					</div>
+				
+				</div>
+
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="container13">
 				<div id="sidebar">
 					<div id="imagesequence">
 						<img id="moon" src="images/MoonPhases-01.png" height="30px" width="30px">
 					</div>
 				</div>
-				
-				<div id="container">
-			
-					<div id="nav"></div>
-					<div class="spacer2"></div>
+
+				<div class="container">
+					
+					<div class="spacer3"></div>
 
 					<div id="greetings">
 						<h1>Hi, I'm David Paul Anthony.</h1>
@@ -48,68 +102,150 @@
 						<div class="btn"></div>
 
 					</div>
+					
+					<div class="clear"></div>
+
+					<div class="spacer3"></div>
+					
+					<section id="gds">
+						
+						<div id="gdsGal">
+						
+							<div class="floatL gdsCon">
+								<h2>Game Design</h2>
+								<p>My undergraduate degree is in Game Design & Development with an Art & Design Concentration. I love games of all type but my primary interest is empathy building through play. Video games in particular are the penultimate art-form that combines many different disciplines. Great examples of games bring harmony to sound design, psychology, computer science, art, and more.</p>
+
+							</div>
+						
+							<div class="floatR"></div>
+							
+							<div class="clear"></div>
+						
+						</div>
+						
+						<div class="spacer2"></div>
+						
+						<div class="line2 gray"></div>
+						
+						<div class="spacer2"></div>
+						
+						<div id="gdsSec">
+						
+							<h2>Projects</h2>
+							
+							<div class="spacer1"></div>
+							
+							<div id="gdsProGal"></div>
+							
+						</div>
+						
+						<div id="gdsSec">
+						
+							<h2>Characters</h2>
+							
+							<div class="spacer1"></div>
+							
+							<div id="gdsProGal"></div>
+							
+						</div>
+					
+					</section>
 
 				</div>
 				
 			</div>
 			
+			<script type="text/javascript">
+		
+			$(document).ready(function() {
+				
+				// EVENT HANDLERS
+				$('.navi').on('click', function(event){
+					event.preventDefault();
+					var destination = $(this).attr('href');
+					$('html, body').stop().animate({
+						scrollTop: $(destination).offset().top
+					}, 1500,'easeInOutExpo');
+				});
+				
+				$("#nav").hide();
+		
+			});
 
-		<script>
+
+        </script>
+
+			<script>
 	
-			//define images
-			var images = [
-				"images/MoonPhases-01.png",
-				"images/MoonPhases-02.png",
-				"images/MoonPhases-03.png",
-				"images/MoonPhases-04.png",
-				"images/MoonPhases-05.png",
-				"images/MoonPhases-06.png",
-				"images/MoonPhases-07.png",
-				"images/MoonPhases-08.png",
-				"images/MoonPhases-09.png",
-				"images/MoonPhases-10.png",
-				"images/MoonPhases-11.png",
-				"images/MoonPhases-12.png",
-				"images/MoonPhases-12.png",
-				"images/MoonPhases-12.png",
-				"images/MoonPhases-12.png",
-				"images/MoonPhases-13.png",
-				"images/MoonPhases-14.png",
-				"images/MoonPhases-15.png",
-				"images/MoonPhases-16.png",
-				"images/MoonPhases-17.png",
-				"images/MoonPhases-18.png",
-				"images/MoonPhases-19.png",
-				"images/MoonPhases-20.png",
-				"images/MoonPhases-21.png",
-				"images/MoonPhases-22.png",
-				"images/MoonPhases-23.png"
-			];
+				//define images
+				var images = [
+					"images/MoonPhases-01.png",
+					"images/MoonPhases-02.png",
+					"images/MoonPhases-03.png",
+					"images/MoonPhases-04.png",
+					"images/MoonPhases-05.png",
+					"images/MoonPhases-06.png",
+					"images/MoonPhases-07.png",
+					"images/MoonPhases-08.png",
+					"images/MoonPhases-09.png",
+					"images/MoonPhases-10.png",
+					"images/MoonPhases-11.png",
+					"images/MoonPhases-12.png",
+					"images/MoonPhases-13.png",
+					"images/MoonPhases-14.png",
+					"images/MoonPhases-15.png",
+					"images/MoonPhases-16.png",
+					"images/MoonPhases-17.png",
+					"images/MoonPhases-18.png",
+					"images/MoonPhases-19.png",
+					"images/MoonPhases-20.png",
+					"images/MoonPhases-21.png",
+					"images/MoonPhases-22.png",
+					"images/MoonPhases-23.png"
+				];
 
-			//placeholder obj to cycle through with TweenMax
-			//Tweenmax can tween any property of any object
-			var obj = {curImg:0};
+				//placeholder obj to cycle through with TweenMax
+				//Tweenmax can tween any property of any object
+				var obj = {curImg:0};
 
-			//Create tween
-			var tween = TweenMax.to(obj, 0.5,
-				{
-					curImg: images.length - 1, //animate property curImg to number of images
-					roundProps: "curImg",
-					repeat: 0,
-					immediateRender: true,
-					ease: Linear.easeNone,
-					onUpdate: function () {
-						$("#moon").attr("src", images[obj.curImg]);
+				//Create tween
+				var tween = TweenMax.to(obj, 0.5,
+					{
+						curImg: images.length - 1, //animate property curImg to number of images
+						roundProps: "curImg",
+						repeat: 0,
+						immediateRender: true,
+						ease: Linear.easeNone,
+						onUpdate: function () {
+							$("#moon").attr("src", images[obj.curImg]);
+						}
 					}
+				);
+
+				//init controller
+				var controller = new ScrollMagic.Controller();
+
+				//buld scene
+				var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() }).setTween(tween).addTo(controller);
+			</script>
+			
+			<script>
+			
+				/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+				var prevScrollpos = window.pageYOffset;
+				window.onscroll = function() {
+				  var currentScrollPos = window.pageYOffset;
+				  if (prevScrollpos > currentScrollPos) {
+					document.getElementById("nav").style.top = "0";
+				  } else {
+					document.getElementById("nav").style.top = "-60px";
+				  }
+				  prevScrollpos = currentScrollPos;
 				}
-			);
-
-			//init controller
-			var controller = new ScrollMagic.Controller();
-
-			//buld scene
-			var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() }).setTween(tween).addTo(controller);
-		</script>
+			
+			</script>
+			
+			
 			
 		</body>
 	
