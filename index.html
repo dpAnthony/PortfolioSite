@@ -13,21 +13,23 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
 		<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
-		<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+		
+		
+		
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto" rel="stylesheet">
 		
 		<!--
 		<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
-		
+		<script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 		-->
 
 
 	</head>
 
-		<body>
+		<body id="top">
 			
 			<div id="nav">
-				
-				<div class="container13">
 				
 					<div class="container">
 					
@@ -35,23 +37,19 @@
 
 						<li>
 							<ul>
-								<a href="#gds" class="navi">GD</a>
+								<a href="#gds" class="navi" title="Game Design">GD</a>
 							</ul>
-
 							<ul>
-								<a href="#id" class="navi">ID</a>
+								<a href="#ids" class="navi" title="Instructional Design">ID</a>
 							</ul>
-
 							<ul>
-								<a href="#md" class="navi">MD</a>
+								<a href="#mds" class="navi" title="Multi-Media Design">MD</a>
 							</ul>
-
 							<ul>
-								<a href="#about" class="navi">ABT</a>
+								<a href="#about" class="navi" title="About">ABT</a>
 							</ul>
-
 							<ul>
-								<a href="#contact" class="navi">HEY</a>
+								<a href="#contact" class="navi" title="Contact">HEY</a>
 							</ul>
 
 						</li>
@@ -63,188 +61,728 @@
 					<div class="clear"></div>
 
 					<div class="container">
-
 						<div class="line1"></div>
-
 					</div>
-				
-				</div>
 
 			</div>
 			
 			<div class="clear"></div>
 			
-			<div class="container13">
-				<div id="sidebar">
+			<div class="container">
+
+				<div id="prog-a">
+						<img id="moonB" src="images/moonBK.png" height="40px" width="40px" alt="">
+				</div>
+				<div id="prog-b">
 					<div id="imagesequence">
-						<img id="moon" src="images/MoonPhases-01.png" height="30px" width="30px">
+						<a href="#top" class="navi"><img id="moonA" src="images/MoonPhases-01.png" height="30px" width="30px" alt="Return to top"></a>
 					</div>
 				</div>
 
-				<div class="container">
-					
-					<div class="spacer3"></div>
+				<div id="greeting">
+					<h1>Hi, I'm David Paul Anthony.</h1>
+					<div class="spacer1"></div>
+					<p>I'm a multi-disciplinary designer from the US.</p>
+					<p>Scroll or click the buttons below to see my work.</p>
 
-					<div id="greetings">
-						<h1>Hi, I'm David Paul Anthony.</h1>
-						<div class="spacer1"></div>
-						<p>I'm a multi-disciplinary designer from the US.</p>
-						<p>Scroll or click the buttons below to see my work.</p>
+					<div id="scroll"><img src="images/scroll.gif" height="80px" width="80px" alt="Scroll to see more"></div>
+				</div>
 
-					</div>
+				<div id="bigNav">
 
-					<div class="spacer2"></div>
-
-					<div id="bigNav">
-
-						<div class="btn"></div>
-						<div class="btn"></div>
-						<div class="btn"></div>
-
-					</div>
-					
-					<div class="clear"></div>
-
-					<div class="spacer3"></div>
-					
-					<section id="gds">
-						
-						<div id="gdsGal">
-						
-							<div class="floatL gdsCon">
-								<h2>Game Design</h2>
-								<p>My undergraduate degree is in Game Design & Development with an Art & Design Concentration. I love games of all type but my primary interest is empathy building through play. Video games in particular are the penultimate art-form that combines many different disciplines. Great examples of games bring harmony to sound design, psychology, computer science, art, and more.</p>
-
-							</div>
-						
-							<div class="floatR"></div>
-							
-							<div class="clear"></div>
-						
+					<div class="card">
+						<div class="cardHdr">
+								<h3>Game Design</h3>
+								<p>characters, stories, & worlds</p>
 						</div>
 						
+						<div class="btnWrapper">
+							<a href="#gds" class="navi"><img id="gdBtn" class="cardBtn" src="images/btn_gd1_sm.png" height="150" width="150" alt="Game design button"/></a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHdr">
+								<h3>Instructional Design</h3>
+								<p>education, engagement, & solutions</p>
+						</div>
+						
+						<div class="btnWrapper">
+							<a href="#ids" class="navi"><img id="idBtn" class="cardBtn" src="images/btn_id1_sm.png" height="150" width="150" alt="Instructional design button"/></a>
+						</div>
+					</div>
+					<div class="card">
+						<div class="cardHdr">
+								<h3>Multimedia Design</h3>
+								<p>crafts, graphics, & more</p>
+						</div>
+						
+						<div class="btnWrapper">
+							<a href="#mds" class="navi"><img id="mdBtn" class="cardBtn" src="images/btn_md1_sm.png" height="150" width="150" alt="Multi-media design button"/></a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="clear"></div>
+
+				<section id="gds">
+
+					<div class="banner" id="banner-gds">
+
+						<div class="floatL banner-box" id="banner-box-gds">
+							<h2>Game Design</h2>
+							<br>
+							<p>My undergraduate degree is in Game Design & Development with an Art & Design Concentration. I love games of all types, but my primary interest is empathy building through play. Video games are the penultimate art-form, combining many different disciplines. The best examples of games bring harmony to sound design, psychology, computer science, art, and more.</p>
+						</div>
+
+						<div class="imgban" id="imgban4"></div>
+						<div class="imgban" id="imgban3"></div>
+						<div class="imgban" id="imgban2"></div>
+						<div class="imgban" id="imgban1"></div>
+
+					</div>
+
+					<div class="container-section">
+
+
+						<div class="spacer1"></div>
+
+						<div class="line2g"></div>
+
 						<div class="spacer2"></div>
-						
-						<div class="line2 gray"></div>
-						
+
+						<div>
+
+							<h2>Projects</h2>
+
+							<div class="spacer1"></div>
+
+							<div class="gallery">
+								<div class="gallery-row">
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds1">
+											<div class="gallery-tile-overlay">
+												<p>Withered Ash</p>
+												<p>Alone to wander an abandoned space station, Dr. Gale Marx must discover the mystery behind the disappearance of thousands aboard the S.S. Rebirth. The black ash that clings to every surface must somehow be involved. She must make a tough decision: destroy the station or try to salvage years of research.</p>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds2">
+											<div class="gallery-tile-overlay">
+												<p>Little Sprouts</p>
+												<p>There is always something new to learn when you're a parent - especially if it's your first time. Take on the role of a parent who is discovering the world of early childhood development with their newborn baby. Determine what seemingly unassuming objects are actually dangerous to children of different ages.</p>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds3">
+											<div class="gallery-tile-overlay">
+												<p>All World Wheelchair</p>
+												<p>Nothing is easy when your business is in the red. Luckily the Big Boss at All World Wheelchair knows exactly how to get the operation running at peak performance. Learn how to problem solve and utilize modern manufacturing techniques to save a floundering factory.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="gallery-row">
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds4">
+											<div class="gallery-tile-overlay">
+												<p>Neon Pheonix</p>
+												<p>"Darko", "Smiles", and "Jo-Jo". For years the trio known as Neon Phoenix dominated the bi-weekly street corner dance competitions in Brooklyn. It seemed like they would reign supreme, unmated by any other group's attempts to outshine them. When Jo-Jo is mysteriously kidnapped by a rival dance troupe, it's up to Darko and Smiles to strut their stuff and save their friend.</p>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds5">
+											<div class="gallery-tile-overlay">
+												<p>Pestilence</p>
+												<p>The plague is upon you. Race to board the last boat leaving Englandia - a forsaken land that is crumbling from the Black Death. Levy your strength by choosing from a selection of provincial characters such as the Plague Doctor, the Knight, or the Hedgewitch, among others. It'll be every person for themselves at the End of the World.</p>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-col">
+										<div class="gallery-tile" id="gallery-tile-gds6">
+											<div class="gallery-tile-overlay">
+												<p>Voyage</p>
+												<p>Among humankind's biggest accomplishments will be the colonization of other planets. Mars has long inspired us to go above and beyond the surface of our planet to explore and settle other worlds. You oversee the first live voyage to the Red Planet - a months long journey that will push you and your crew to the limits. Can you survive the unexplored nature of space travel?</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="clear"></div>
+
 						<div class="spacer2"></div>
-						
-						<div id="gdsSec">
-						
+
+						<div class="line2g"></div>
+
+					</div>
+
+				</section>
+				
+				<section id="ids">
+
+					<div class="banner" id="banner-ids">
+
+						<div class="floatL banner-box" id="banner-box-ids">
+							<h2>Instructional Design</h2>
+							<br>
+							<p>I currently work as an Instructional Design Specialist at the University of Wisconsin: Stout and am pursuing a graduate certification in Instructional Design. I've had the opportunity to work on a plethora of projects as part of my position. Here are some examples of my Instructional Design work.</p>
+
+						</div>
+
+						<div class="imgban" id="imgban8"></div>
+						<div class="imgban" id="imgban7"></div>
+						<div class="imgban" id="imgban6"></div>
+						<div class="imgban" id="imgban5"></div>
+
+					</div>
+
+					<div class="container-section">
+
+						<div>
+
 							<h2>Projects</h2>
 							
 							<div class="spacer1"></div>
 							
-							<div id="gdsProGal"></div>
-							
-						</div>
-						
-						<div id="gdsSec">
-						
-							<h2>Characters</h2>
-							
-							<div class="spacer1"></div>
-							
-							<div id="gdsProGal"></div>
-							
-						</div>
-					
-					</section>
+							<h3>EDUC 765 - Certificate Course Design Documents</h3>
+							<p>My project utilizes a community-based effort to increase public perception and participation in local recycling programs. The project's final form will be a flexible online course meant to inform learners of the importance of local recycling efforts, the global plastic crisis, and practical ways to improve a household's waste management habits. The course will initially focus on the community members, aged 16+, that are living in Dunn County, Wisconsin. Although Dunn County will be the focus group, the materials could be updated to fit any locality with a nearby recycling facility. Below you'll find some examples of coursework meant to support this idea.</p>
 
-				</div>
-				
+							<div class="spacer1"></div>
+
+							<div class="gdsGal">
+								<div class="galCol1">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+								<div class="galCol2">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+								<div class="galCol3">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="spacer1"></div>
+
+						<div class="line2g"></div>
+
+						<div class="spacer2"></div>
+
+					</div>
+
+				</section>
+
+				<section id="mds">
+
+					<div class="banner" id="banner-mds">
+
+						<div class="floatL banner-box" id="banner-box-mds">
+							<h2>Multi-Media Design</h2>
+							<br>
+							<p>Outside of the above specializations, I'm also trained in traditional and digital media forms. Below are some pieces I've worked on outside of the game design or instructional design.</p>
+
+						</div>
+
+						<div class="imgban" id="imgban12"></div>
+						<div class="imgban" id="imgban11"></div>
+						<div class="imgban" id="imgban10"></div>
+						<div class="imgban" id="imgban9"></div>
+
+					</div>
+
+					<div class="container-section">
+
+						<div>
+
+							<h2>Projects</h2>
+							
+							
+
+							<div class="spacer1"></div>
+
+							<div class="gdsGal">
+								<div class="galCol1">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+								<div class="galCol2">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+								<div class="galCol3">
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+									<div class="galRow" id="">
+										<div class="galOverlay">
+											
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="spacer2"></div>
+
+						<div class="line2g"></div>
+
+					</div>
+
+				</section>
+
 			</div>
 			
 			<script type="text/javascript">
-		
-			$(document).ready(function() {
 				
-				// EVENT HANDLERS
-				$('.navi').on('click', function(event){
-					event.preventDefault();
-					var destination = $(this).attr('href');
-					$('html, body').stop().animate({
-						scrollTop: $(destination).offset().top
-					}, 1500,'easeInOutExpo');
+				$(function() {
+					
+					gdImg = document.getElementById('gdBtn');
+					idImg = document.getElementById('idBtn');
+					mdImg = document.getElementById('mdBtn');
+					
+					$(gdImg).hover(
+						function(){						
+							gdImg.src = "images/btn_gd2_sm.gif";
+						},
+						function(){
+							gdImg.src = "images/btn_gd1_sm.png";
+					});
+					
+					$(idImg).hover(
+						function(){						
+							idImg.src = "images/btn_id2_sm.gif";
+						},
+						function(){
+							idImg.src = "images/btn_id1_sm.png";
+					});
+					
+					$(mdImg).hover(
+						function(){						
+							mdImg.src = "images/btn_md2_sm.gif";
+						},
+						function(){
+							mdImg.src = "images/btn_md1_sm.png";
+					});
+
+					
 				});
-				
-				$("#nav").hide();
+
+			</script>
+
+			<script type="text/javascript">
 		
-			});
+				$(document).ready(function() {
 
-
-        </script>
-
-			<script>
-	
-				//define images
-				var images = [
-					"images/MoonPhases-01.png",
-					"images/MoonPhases-02.png",
-					"images/MoonPhases-03.png",
-					"images/MoonPhases-04.png",
-					"images/MoonPhases-05.png",
-					"images/MoonPhases-06.png",
-					"images/MoonPhases-07.png",
-					"images/MoonPhases-08.png",
-					"images/MoonPhases-09.png",
-					"images/MoonPhases-10.png",
-					"images/MoonPhases-11.png",
-					"images/MoonPhases-12.png",
-					"images/MoonPhases-13.png",
-					"images/MoonPhases-14.png",
-					"images/MoonPhases-15.png",
-					"images/MoonPhases-16.png",
-					"images/MoonPhases-17.png",
-					"images/MoonPhases-18.png",
-					"images/MoonPhases-19.png",
-					"images/MoonPhases-20.png",
-					"images/MoonPhases-21.png",
-					"images/MoonPhases-22.png",
-					"images/MoonPhases-23.png"
-				];
-
-				//placeholder obj to cycle through with TweenMax
-				//Tweenmax can tween any property of any object
-				var obj = {curImg:0};
-
-				//Create tween
-				var tween = TweenMax.to(obj, 0.5,
-					{
-						curImg: images.length - 1, //animate property curImg to number of images
-						roundProps: "curImg",
-						repeat: 0,
-						immediateRender: true,
-						ease: Linear.easeNone,
-						onUpdate: function () {
-							$("#moon").attr("src", images[obj.curImg]);
+					// EVENT HANDLERS
+					$('.navi').on('click', function(event){
+						event.preventDefault();
+						var destination = $(this).attr('href');
+						
+						if (destination=="#top"){
+							$('html, body').stop().animate({
+							scrollTop: $(destination).offset().top-25
+						}, 1500,'easeInOutExpo');
+							
+						} else {
+							$('html, body').stop().animate({
+								scrollTop: $(destination).offset().top-60
+							}, 1500,'easeInOutExpo');
 						}
-					}
-				);
+						
+						
+					});
 
-				//init controller
-				var controller = new ScrollMagic.Controller();
 
-				//buld scene
-				var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() }).setTween(tween).addTo(controller);
+					//$("#nav").hide();
+
+				});
+
+
+			</script>
+
+			<script type="text/javascript">
+	
+				$(function() {
+					
+					//define images for moon
+					var images = [
+						"images/MoonPhases-01.png",
+						"images/MoonPhases-02.png",
+						"images/MoonPhases-03.png",
+						"images/MoonPhases-04.png",
+						"images/MoonPhases-05.png",
+						"images/MoonPhases-06.png",
+						"images/MoonPhases-07.png",
+						"images/MoonPhases-08.png",
+						"images/MoonPhases-09.png",
+						"images/MoonPhases-10.png",
+						"images/MoonPhases-11.png",
+						"images/MoonPhases-12.png",
+						"images/MoonPhases-13.png",
+						"images/MoonPhases-14.png",
+						"images/MoonPhases-15.png",
+						"images/MoonPhases-16.png",
+						"images/MoonPhases-17.png",
+						"images/MoonPhases-18.png",
+						"images/MoonPhases-19.png",
+						"images/MoonPhases-20.png",
+						"images/MoonPhases-21.png",
+						"images/MoonPhases-22.png",
+						"images/MoonPhases-23.png"
+					];
+
+					//placeholder obj to cycle through with TweenMax
+					//Tweenmax can tween any property of any object
+					var obj = {curImg:0};
+
+					//Create tween
+					var tween = TweenMax.to(obj, 0.5,
+						{
+							curImg: images.length - 1, //animate property curImg to number of images
+							roundProps: "curImg",
+							repeat: 0,
+							immediateRender: true,
+							ease: Linear.easeNone,
+							onUpdate: function () {
+								$("#moonA").attr("src", images[obj.curImg]);
+							}
+						}
+					);
+
+					//init controller
+					var controller = new ScrollMagic.Controller();
+					
+					
+					//buld scene
+					var scene = new ScrollMagic.Scene({duration: ($(document).height()) - $(window).height() - 60 }).setTween(tween).addTo(controller);
+
+					});
+				
 			</script>
 			
 			<script>
-			
+				
 				/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 				var prevScrollpos = window.pageYOffset;
 				window.onscroll = function() {
 				  var currentScrollPos = window.pageYOffset;
-				  if (prevScrollpos > currentScrollPos) {
+				  if (prevScrollpos < currentScrollPos) {
 					document.getElementById("nav").style.top = "0";
 				  } else {
 					document.getElementById("nav").style.top = "-60px";
 				  }
 				  prevScrollpos = currentScrollPos;
+					
+					$('.card').each(function(i){
+						
+						var objBot = $(this).position().top + $(this).outerHeight();
+						var winBot = $(window).scrollTop() + $(window).height();
+						var winTop = $(window).scrollTop();
+						
+						if (winBot > objBot) {
+							$(this).animate({'opacity':'1'}, 500);
+						}
+						
+					});
 				}
 			
 			</script>
 			
+			<script type="text/javascript">
+				
+				var bannerStatus = 1;
+				var bannerTimer = 3500;
+				var canHide = true;
+				
+				window.onload = function() {
+					bannerLoop();
+				}
+				
+				var startBannerLoop = setInterval(function() {
+					bannerLoop();
+				}, bannerTimer);
+				
+				document.getElementById("banner-gds").onmouseenter = function() {
+					clearInterval(startBannerLoop);
+					
+					if (canHide == true) {
+						$(document.getElementById("banner-box-gds")).animate({'opacity':'0'}, 250);
+						canHide = false;
+					}
+				}
+				document.getElementById("banner-gds").onmouseleave = function() {
+					startBannerLoop = setInterval(function() {
+						bannerLoop();
+					}, bannerTimer);
+					
+					if (canHide == false) {
+						$(document.getElementById("banner-box-gds")).animate({'opacity':'1'}, 600, function(){canHide=true;});
+					}	
+				}
+				document.getElementById("banner-ids").onmouseenter = function() {
+					clearInterval(startBannerLoop);
+					
+					if (canHide == true) {
+						$(document.getElementById("banner-box-ids")).animate({'opacity':'0'}, 250);
+						canHide = false;
+					}
+				}
+				document.getElementById("banner-ids").onmouseleave = function() {
+					startBannerLoop = setInterval(function() {
+						bannerLoop();
+					}, bannerTimer);
+					
+					if (canHide == false) {
+						$(document.getElementById("banner-box-ids")).animate({'opacity':'1'}, 600, function(){canHide=true;});
+					}
+				}
+				document.getElementById("banner-mds").onmouseenter = function() {
+					clearInterval(startBannerLoop);
+					
+					if (canHide == true) {
+						$(document.getElementById("banner-box-mds")).animate({'opacity':'0'}, 250);
+						canHide = false;
+					}
+				}
+				document.getElementById("banner-mds").onmouseleave = function() {
+					startBannerLoop = setInterval(function() {
+						bannerLoop();
+					}, bannerTimer);
+					
+					if (canHide == false) {
+						$(document.getElementById("banner-box-mds")).animate({'opacity':'1'}, 600, function(){canHide=true;});
+					}
+				}
+				
+				function bannerLoop() {
+					if (bannerStatus === 1) {
+						document.getElementById("imgban2").style.opacity = "0";
+						document.getElementById("imgban6").style.opacity = "0";
+						document.getElementById("imgban10").style.opacity = "0";
+						setTimeout(function() {
+							document.getElementById("imgban1").style.right = "0px";
+							document.getElementById("imgban1").style.zIndex = "5";
+							document.getElementById("imgban2").style.right = "-978px";
+							document.getElementById("imgban2").style.zIndex = "6";
+							document.getElementById("imgban3").style.right = "978px";
+							document.getElementById("imgban3").style.zIndex = "4";
+							document.getElementById("imgban4").style.right = "1956px";
+							document.getElementById("imgban4").style.zIndex = "3";
+							
+							document.getElementById("imgban5").style.right = "0px";
+							document.getElementById("imgban5").style.zIndex = "5";
+							document.getElementById("imgban6").style.right = "-978px";
+							document.getElementById("imgban6").style.zIndex = "6";
+							document.getElementById("imgban7").style.right = "978px";
+							document.getElementById("imgban7").style.zIndex = "4";
+							document.getElementById("imgban8").style.right = "1956px";
+							document.getElementById("imgban8").style.zIndex = "3";
+							
+							document.getElementById("imgban9").style.right = "0px";
+							document.getElementById("imgban9").style.zIndex = "5";
+							document.getElementById("imgban10").style.right = "-978px";
+							document.getElementById("imgban10").style.zIndex = "6";
+							document.getElementById("imgban11").style.right = "978px";
+							document.getElementById("imgban11").style.zIndex = "4";
+							document.getElementById("imgban12").style.right = "1956px";
+							document.getElementById("imgban12").style.zIndex = "3";
+						}, 500);
+						setTimeout(function() {
+							document.getElementById("imgban2").style.opacity = "1";
+							document.getElementById("imgban6").style.opacity = "1";
+							document.getElementById("imgban10").style.opacity = "1";
+						}, 1000);
+						bannerStatus = 2;
+					}
+					else if (bannerStatus === 2) {
+						document.getElementById("imgban3").style.opacity = "0";
+						document.getElementById("imgban7").style.opacity = "0";
+						document.getElementById("imgban11").style.opacity = "0";
+						setTimeout(function() {
+							document.getElementById("imgban2").style.right = "0px";
+							document.getElementById("imgban2").style.zIndex = "5";
+							document.getElementById("imgban3").style.right = "-978px";
+							document.getElementById("imgban3").style.zIndex = "6";
+							document.getElementById("imgban1").style.right = "978px";
+							document.getElementById("imgban1").style.zIndex = "4";
+							document.getElementById("imgban4").style.right = "1956px";
+							document.getElementById("imgban4").style.zIndex = "3";
+							
+							document.getElementById("imgban6").style.right = "0px";
+							document.getElementById("imgban6").style.zIndex = "5";
+							document.getElementById("imgban7").style.right = "-978px";
+							document.getElementById("imgban7").style.zIndex = "6";
+							document.getElementById("imgban5").style.right = "978px";
+							document.getElementById("imgban5").style.zIndex = "4";
+							document.getElementById("imgban8").style.right = "1956px";
+							document.getElementById("imgban8").style.zIndex = "3";
+							
+							document.getElementById("imgban10").style.right = "0px";
+							document.getElementById("imgban10").style.zIndex = "5";
+							document.getElementById("imgban11").style.right = "-978px";
+							document.getElementById("imgban11").style.zIndex = "6";
+							document.getElementById("imgban9").style.right = "978px";
+							document.getElementById("imgban9").style.zIndex = "4";
+							document.getElementById("imgban12").style.right = "1956px";
+							document.getElementById("imgban12").style.zIndex = "3";
+						}, 500);
+						setTimeout(function() {
+							document.getElementById("imgban3").style.opacity = "1";
+							document.getElementById("imgban7").style.opacity = "1";
+							document.getElementById("imgban11").style.opacity = "1";
+						}, 1000);
+						bannerStatus = 3;
+					}
+					else if (bannerStatus === 3) {
+						document.getElementById("imgban4").style.opacity = "0";
+						document.getElementById("imgban8").style.opacity = "0";
+						document.getElementById("imgban12").style.opacity = "0";
+						setTimeout(function() {
+							document.getElementById("imgban3").style.right = "0px";
+							document.getElementById("imgban3").style.zIndex = "5";
+							document.getElementById("imgban4").style.right = "-978px";
+							document.getElementById("imgban4").style.zIndex = "6";
+							document.getElementById("imgban2").style.right = "978px";
+							document.getElementById("imgban2").style.zIndex = "4";
+							document.getElementById("imgban1").style.right = "1956px";
+							document.getElementById("imgban1").style.zIndex = "4";
+							
+							document.getElementById("imgban7").style.right = "0px";
+							document.getElementById("imgban7").style.zIndex = "5";
+							document.getElementById("imgban8").style.right = "-978px";
+							document.getElementById("imgban8").style.zIndex = "6";
+							document.getElementById("imgban6").style.right = "978px";
+							document.getElementById("imgban6").style.zIndex = "4";
+							document.getElementById("imgban5").style.right = "1956px";
+							document.getElementById("imgban5").style.zIndex = "4";
+							
+							document.getElementById("imgban11").style.right = "0px";
+							document.getElementById("imgban11").style.zIndex = "5";
+							document.getElementById("imgban12").style.right = "-978px";
+							document.getElementById("imgban12").style.zIndex = "6";
+							document.getElementById("imgban10").style.right = "978px";
+							document.getElementById("imgban10").style.zIndex = "4";
+							document.getElementById("imgban9").style.right = "1956px";
+							document.getElementById("imgban9").style.zIndex = "4";
+						}, 500);
+						setTimeout(function() {
+							document.getElementById("imgban4").style.opacity = "1";
+							document.getElementById("imgban8").style.opacity = "1";
+							document.getElementById("imgban12").style.opacity = "1";
+						}, 1000);
+						bannerStatus = 4;
+					}
+					else if (bannerStatus === 4) {
+						document.getElementById("imgban1").style.opacity = "0";
+						document.getElementById("imgban5").style.opacity = "0";
+						document.getElementById("imgban9").style.opacity = "0";
+						setTimeout(function() {
+							document.getElementById("imgban4").style.right = "0px";
+							document.getElementById("imgban4").style.zIndex = "5";
+							document.getElementById("imgban1").style.right = "-978px";
+							document.getElementById("imgban1").style.zIndex = "6";
+							document.getElementById("imgban3").style.right = "978px";
+							document.getElementById("imgban3").style.zIndex = "4";
+							document.getElementById("imgban2").style.right = "1956px";
+							document.getElementById("imgban2").style.zIndex = "4";
+							
+							document.getElementById("imgban8").style.right = "0px";
+							document.getElementById("imgban8").style.zIndex = "5";
+							document.getElementById("imgban5").style.right = "-978px";
+							document.getElementById("imgban5").style.zIndex = "6";
+							document.getElementById("imgban7").style.right = "978px";
+							document.getElementById("imgban7").style.zIndex = "4";
+							document.getElementById("imgban6").style.right = "1956px";
+							document.getElementById("imgban6").style.zIndex = "4";
+							
+							document.getElementById("imgban12").style.right = "0px";
+							document.getElementById("imgban12").style.zIndex = "5";
+							document.getElementById("imgban9").style.right = "-978px";
+							document.getElementById("imgban9").style.zIndex = "6";
+							document.getElementById("imgban11").style.right = "978px";
+							document.getElementById("imgban11").style.zIndex = "4";
+							document.getElementById("imgban10").style.right = "1956px";
+							document.getElementById("imgban10").style.zIndex = "4";
+						}, 500);
+						setTimeout(function() {
+							document.getElementById("imgban1").style.opacity = "1";
+							document.getElementById("imgban5").style.opacity = "1";
+							document.getElementById("imgban9").style.opacity = "1";
+						}, 1000);
+						bannerStatus = 1;
+					}
+
+				}
+			
+			</script>
 			
 			
 		</body>
